@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8" />
+	<title>hanoi</title>
+	<link rel="stylesheet" href="css.css" />
+</head>
+<body onselectstart="return false">
+	<h1>汉诺塔</h1>
+	<div id="container">
+		<div class="tower" id="tower1">
+			<div class="column"></div>
+			<p>A</p>
+		</div>
+		<div class="tower" id="tower2">
+			<div class="column"></div>
+				<p>B</p>
+		</div>
+		<div class="tower" id="tower3">
+			<div class="column"></div>
+				<p>C</p>
+		</div>
+		<div class="disk"></div>
+		<div class="disk"></div>
+		<div class="disk"></div>
+		<div class="disk"></div>
+		<div class="disk"></div>
+		<div class="disk"></div>
+		<div class="disk"></div>
+		<div class="disk"></div>
+	</div>
+	<form>
+		<div class="form-top">
+		<span>盘子数：</span>
+		<select id="selection">
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+		</select>
+		<span>最少步数：</span>
+		<b id="min-step">0</b>
+		<span>当前步数：</span>
+		<b id="step">0</b>
+		</div>
+		<button type="button" id="introduction">说明</button>
+		<button type="button" id="reset">重置</button>
+		<button type="button" id="animation">动画</button>
+	</form>
+	<div id="shade"></div>
+	<div id="pop">
+	<div id="text"></div>
+	<button id="ok">OK</button>
+	</div>
+	<script src="../jquery-2.2.3.min.js"></script>
+	<script src="hanoi.js"></script>
+
+</body>
+</html>
